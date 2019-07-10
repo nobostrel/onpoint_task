@@ -1,8 +1,8 @@
-import { all } from 'redux-saga/effects';
-import { watchTableActions } from './tableAPI';
+// import { all } from 'redux-saga/effects';
+// import { watchTableActions } from './tableAPI';
 
-export function* rootSaga() {
-    yield all([
-        watchTableActions()
-    ])
-}
+// export function* rootSaga() {
+//     yield all([
+//         watchTableActions()
+//     ])
+// }

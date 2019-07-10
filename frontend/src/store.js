@@ -11,9 +11,9 @@ import { initialState } from './initialState.js';
 const logger = createLogger();
 const history = createBrowserHistory();
 const middleware = routerMiddleware(history);
-const sagaMiddleware = createSagaMiddleware();
+// const sagaMiddleware = createSagaMiddleware();
 
 export const store = createStore( rootReducer(history), initialState, 
-    composeWithDevTools( applyMiddleware(middleware, logger, sagaMiddleware) ) );
+    composeWithDevTools( applyMiddleware(middleware, logger) ) );
 
-sagaMiddleware.run(rootSaga);
+// sagaMiddleware.run(rootSaga);
